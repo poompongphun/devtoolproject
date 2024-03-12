@@ -8,15 +8,15 @@ pipeline {
         SSH_CREDENTIALS = 'ssh-prod_instance' // Use the ID of the Jenkins stored SSH credentials.
 
         // App Env
-        DATABASE_URL="DATABASE_URL"
-        SESSION_SECRET="SESSION_SECRET"
-        SECRET_KEY="SECRET_KEY"
+        DATABASE_URL = credentials("DATABASE_URL")
+        SESSION_SECRET = credentials("SESSION_SECRET")
+        SECRET_KEY = credentials("SECRET_KEY")
 
-        GOOGLE_CLIENT_ID="GOOGLE_CLIENT_ID"
-        GOOGLE_CLIENT_SECRET="GOOGLE_CLIENT_SECRET"
+        GOOGLE_CLIENT_ID = credentials("GOOGLE_CLIENT_ID")
+        GOOGLE_CLIENT_SECRET = credentials("GOOGLE_CLIENT_SECRET")
 
-        FACEBOOK_CLIENT_ID="FACEBOOK_CLIENT_ID"
-        FACEBOOK_CLIENT_SECRET="FACEBOOK_CLIENT_SECRET"
+        FACEBOOK_CLIENT_ID = credentials("FACEBOOK_CLIENT_ID")
+        FACEBOOK_CLIENT_SECRET = credentials("FACEBOOK_CLIENT_SECRET")
     }
 
     stages {
