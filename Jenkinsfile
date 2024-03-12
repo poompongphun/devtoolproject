@@ -63,7 +63,7 @@ pipeline {
                     sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker stop \$(docker ps -a -q) || true'"
                     sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker rm \$(docker ps -a -q) || true'"
                     sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker rmi \$(docker images -q) || true'"
-                    sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker run --network="host" -e DATABASE_URL='$DATABASE_URL' \
+                    sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker run --network='host' -e DATABASE_URL='$DATABASE_URL' \
 -e SESSION_SECRET='$SESSION_SECRET' \
 -e SECRET_KEY='$SECRET_KEY' \
 -e GOOGLE_CLIENT_ID='$GOOGLE_CLIENT_ID' \
