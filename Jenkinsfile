@@ -63,7 +63,15 @@ pipeline {
                     sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker stop \$(docker ps -a -q) || true'"
                     sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker rm \$(docker ps -a -q) || true'"
                     sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker rmi \$(docker images -q) || true'"
-                    sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker run -d --name doofat -p 80:3000 $DOCKER_IMAGE -e DATABASE_URL=$DATABASE_URL -e SESSION_SECRET=$SESSION_SECRET -e SECRET_KEY=$SECRET_KEY -e GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID -e GOOGLE_CLIENT_SECRET=$GOOGLE_CLIENT_SECRET -e FACEBOOK_CLIENT_ID=$FACEBOOK_CLIENT_ID -e FACEBOOK_CLIENT_SECRET=$FACEBOOK_CLIENT_SECRET'"
+                    sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker run --network="host" -e DATABASE_URL='$DATABASE_URL' \
+-e SESSION_SECRET='$SESSION_SECRET' \
+-e SECRET_KEY='$SECRET_KEY' \
+-e GOOGLE_CLIENT_ID='$GOOGLE_CLIENT_ID' \
+-e GOOGLE_CLIENT_SECRET='$GOOGLE_CLIENT_SECRET' \
+-e FACEBOOK_CLIENT_ID='$FACEBOOK_CLIENT_ID' \
+-e FACEBOOK_CLIENT_SECRET='$FACEBOOK_CLIENT_SECRET' \
+-p 80:80 \
+--name doofat $DOCKER_IMAGE'"
                     sh "ssh -o StrictHostKeyChecking=no $REMOTE_HOST 'docker ps -a'"
                 }
             }
