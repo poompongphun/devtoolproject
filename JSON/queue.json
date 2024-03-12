@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "ร้านเนบิวล่า",
+    "queue": 3,
+    "status": 1
+  },
+  {
+    "id": 2,
+    "name": "ร้านปาล์มพงศิริ",
+    "queue": 10,
+    "status": 2
+  },
+  {
+    "id": 3,
+    "name": "ร้านingfabibi",
+    "queue": 8,
+    "status": 3
+  },
+  {
+    "id": 4,
+    "name": "ร้านingfabibi",
+    "queue": 0,
+    "status": 4
+  },
+  {
+    "id": 5,
+    "name": "ร้านingfabibi",
+    "queue": 0,
+    "status": 5
+  }
+]

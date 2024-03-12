@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Visa",
+    "holderName": "Dev Nebula",
+    "number": "**** **** **** 1234",
+    "expire": "12/2022",
+    "cvv": "123"
+  },
+  {
+    "id": 2,
+    "name": "Master Card",
+    "holderName": "Poom lnwza007",
+    "number": "**** **** **** 5678",
+    "expire": "12/2022",
+    "cvv": "123"
+  }
+]

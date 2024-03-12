@@ -1,0 +1,36 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    font-family: "Noto Sans Thai", sans-serif;
+}
+.center-shadow {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+}
+
+.hidden-line {
+    --line: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line);
+    line-clamp: var(--line);
+    -webkit-box-orient: vertical;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+

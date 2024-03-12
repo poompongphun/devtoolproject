@@ -1,0 +1,23 @@
+[
+  {
+    "store_id": 1,
+    "name": "KFC",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet aut accusamus maxime aliquid aperiam voluptate officiis laborum veniam praesentium minus, iure rem, a nobis eligendi culpa consectetur sed fugiat quis illo rerum pariatur doloribus, provident est! Corrupti ad modi nihil vitae accusamus expedita culpa quaerat architecto recusandae earum, dolorem reiciendis voluptate unde! Tempore nam a tempora totam eos quas nemo enim ipsam placeat. Deserunt nisi a dolorum animi minima repellendus non exercitationem quod dignissimos amet obcaecati omnis asperiores maiores dicta cumque provident optio sint enim incidunt ratione distinctio mollitia, corporis nulla impedit? Maxime, culpa. Aperiam totam asperiores placeat?",
+    "image": "https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png",
+    "background": "https://toohotel.com/wp-content/uploads/2022/09/TOO_restaurant_Panoramique_vue_Paris_nuit_v2-scaled.jpg"
+  },
+  {
+    "store_id": 12,
+    "name": "Pizza Company",
+    "description": "store12",
+    "image": "https://cdn.1112.com/1112/public/images/og-image-pizza.jpg",
+    "background": "https://images.adsttc.com/media/images/5e4c/1025/6ee6/7e0b/9d00/0877/large_jpg/feature_-_Main_hall_1.jpg?1582043123"
+  },
+  {
+    "store_id": 3,
+    "name": "Starbucks",
+    "description": "store3",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png",
+    "background": "https://www.discoverlosangeles.com/sites/default/files/images/2019-01/laxbw-prime-1715-hor-wide.jpg?width=1600&height=1200&fit=crop&quality=78&auto=webp"
+  }
+]

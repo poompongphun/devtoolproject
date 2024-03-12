@@ -1,0 +1,70 @@
+[
+  {
+    "order_id": 1,
+    "user_id": 1,
+    "store_id": {
+      "store_id": 1,
+      "name": "store1",
+      "description": "store1",
+      "image": "store1.jpg"
+    },
+    "foods": [
+      {
+        "food_id": 1,
+        "menu_id": 1,
+        "store_id": 1,
+        "name": "food1",
+        "description": "food1",
+        "price": 100,
+        "image": "food1.jpg"
+      },
+      {
+        "food_id": 2,
+        "menu_id": 2,
+        "store_id": 2,
+        "name": "food2",
+        "description": "food2",
+        "price": 200,
+        "image": "food2.jpg"
+      },
+      {
+        "food_id": 3,
+        "menu_id": 3,
+        "store_id": 3,
+        "name": "food3",
+        "description": "food3",
+        "price": 300,
+        "image": "food3.jpg"
+      }
+    ],
+    "total_price": 100,
+    "create_at": "2021-01-01 00:00:00",
+    "complete_at": "2021-01-01 00:00:00",
+    "status": "complete"
+  },
+  {
+    "order_id": 2,
+    "user_id": 2,
+    "store_id": {
+      "store_id": 2,
+      "name": "store2",
+      "description": "store2",
+      "image": "store2.jpg"
+    },
+    "foods": [
+      {
+        "food_id": 2,
+        "menu_id": 2,
+        "store_id": 2,
+        "name": "food2",
+        "description": "food2",
+        "price": 200,
+        "image": "food2.jpg"
+      }
+    ],
+    "total_price": 200,
+    "create_at": "2022-02-02 00:00:00",
+    "complete_at": "2022-02-02 00:00:00",
+    "status": "complete"
+  }
+]
