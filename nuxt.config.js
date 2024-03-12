@@ -161,6 +161,9 @@ export default {
     { path: '/api', handler: '~/api/app.ts' },
     { path: '/socket.io', handler: '~/api/socket.ts' },
   ],
+  server: {
+    port: 80 // default: 3000
+  }
   // proxy: {
   //   '/api': {
   //     target: 'http://localhost:3000',

@@ -22,29 +22,29 @@ pipeline {
     }
 
     stages {
-        // stage('Build Docker Image') {
-        //       steps {
-        //               // Build the Docker image
+        stage('Build Docker Image') {
+              steps {
+                      // Build the Docker image
 
-        //               dir('./') {
-        //                 sh 'echo "Running in $(pwd)"'
-        //                 sh 'echo start build the Docker image = $DOCKER_IMAGE'
-        //                 sh 'docker build -t $DOCKER_IMAGE .'
-        //               }
+                      dir('./') {
+                        sh 'echo "Running in $(pwd)"'
+                        sh 'echo start build the Docker image = $DOCKER_IMAGE'
+                        sh 'docker build -t $DOCKER_IMAGE .'
+                      }
 
-        //       }
-        // }
-        // stage('Push to Docker Hub') {
-        //     steps {
-        //         script {
+              }
+        }
+        stage('Push to Docker Hub') {
+            steps {
+                script {
 
-        //             // Login to Docker Hub
-        //             sh 'echo $DOCKER_CREDENTIALS_PSW | docker login --username $DOCKER_CREDENTIALS_USR --password-stdin'
-        //             // Push the image
-        //             sh 'docker push $DOCKER_IMAGE'
-        //         }
-        //     }
-        // }
+                    // Login to Docker Hub
+                    sh 'echo $DOCKER_CREDENTIALS_PSW | docker login --username $DOCKER_CREDENTIALS_USR --password-stdin'
+                    // Push the image
+                    sh 'docker push $DOCKER_IMAGE'
+                }
+            }
+        }
         stage('Login to Docker Hub') {
             steps {
                 // This step logs into Docker Hub using credentials stored in Jenkins.
